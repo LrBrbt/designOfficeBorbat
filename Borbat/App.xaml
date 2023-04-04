@@ -9,6 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="./Styles/ButtonsStyles.xaml"/>
                 <ResourceDictionary Source="./Styles/GridStyle.xaml"/>
+                <ResourceDictionary Source="./Styles/TextBoxStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
         </ResourceDictionary>

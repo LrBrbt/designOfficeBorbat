@@ -23,14 +23,16 @@ namespace Borbat
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
 
-        
+
 
         private void StartBTN_Click(object sender, RoutedEventArgs e)
         {
-
+            Authorization autorization = new Authorization();
+            this.Close();
+            autorization.ShowDialog();
         }
     }
 }
