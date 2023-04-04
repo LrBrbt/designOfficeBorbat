@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Borbat"
         mc:Ignorable="d"
-        Title="Регистрация" Height="419" Width="360">
+        Title="Регистрация" Height="440" Width="375">
     <Grid Style="{StaticResource GridStyle}">
-        <TextBox Style="{StaticResource TextBoxStyle}" Text="email@mail.com" Margin="42,50,42,300"/>
-        <TextBox Style="{StaticResource TextBoxStyle}" Text="логин" Margin="42,105,42,245"/>
-
-        <PasswordBox Style="{StaticResource PasswordBoxStyle}" Margin="42,160,42,188" />
+        <PasswordBox x:Name="SecondPasswordPB" Style="{StaticResource PasswordBoxStyle}" Margin="42,220,42,128"/>
+        <PasswordBox x:Name="FirstPasswordPB" Style="{StaticResource PasswordBoxStyle}" Margin="42,160,42,188" GotFocus="FirstPasswordPB_GotFocus" LostFocus="FirstPasswordPB_LostFocus"/>
+        <TextBox Style="{StaticResource TextBoxStyle}" Text="email@mail.com" Margin="42,44,42,306"/>
+        <TextBox Style="{StaticResource TextBoxStyle}" Text="логин" Margin="42,102,42,248"/>
+        <Label x:Name="EnterPasswordLabel" Style="{StaticResource ResourceKey=LabelStyle}" Content="Введите пароль" Margin="107,173,124,201" GotFocus="EnterPasswordLabel_GotFocus" KeyDown="EnterPasswordLabel_KeyDown" MouseDown="EnterPasswordLabel_MouseDown"/>
+        <Label x:Name="RepeatPasswordLabel" Style="{StaticResource ResourceKey=LabelStyle}" Content="Повторите пароль" Margin="100,233,100,141"/>
+        <Button Style="{StaticResource ButtonStartPageStyle}" Content="Зарегистрироваться" Margin="42,295,42,68"/>
+        <Button Style="{StaticResource ButtonStartPageStyle}" Content="Отмена" Margin="42,340,42,23"/>
     </Grid>
 </Window>

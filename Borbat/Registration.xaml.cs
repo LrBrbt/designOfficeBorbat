@@ -23,5 +23,35 @@ namespace Borbat
         {
             InitializeComponent();
         }
+
+        private void FirstPasswordPB_GotFocus(object sender, RoutedEventArgs e)
+        {
+            EnterPasswordLabel.Visibility = Visibility.Hidden;
+            EnterPasswordLabel.IsEnabled= false;
+        }
+
+        private void EnterPasswordLabel_GotFocus(object sender, RoutedEventArgs e)
+        {
+            FirstPasswordPB.Focus();
+        }
+
+        private void FirstPasswordPB_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (FirstPasswordPB.Password.Length == 0)
+            {
+                EnterPasswordLabel.Visibility = Visibility.Visible;
+                EnterPasswordLabel.IsEnabled = true;
+            }
+        }
+
+        private void EnterPasswordLabel_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void EnterPasswordLabel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            FirstPasswordPB.Focus();
+        }
     }
 }

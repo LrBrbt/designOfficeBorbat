@@ -23,5 +23,12 @@ namespace Borbat
         {
             InitializeComponent();
         }
+
+        private void RegistrationBTN_Click(object sender, RoutedEventArgs e)
+        {
+            Registration signUp = new Registration();
+            signUp.Owner = this;
+            signUp.ShowDialog();
+        }
     }
 }

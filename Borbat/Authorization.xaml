@@ -10,7 +10,7 @@
         <TextBox Style="{StaticResource TextBoxStyle}" x:Name="Login" Margin="59,60,59,270" Text="Логин"/>
         <PasswordBox x:Name="PasswordPB" Style="{StaticResource PasswordBoxStyle}" Margin="59,111,59,214"/>
         <Button x:Name="EnterBTN" Style="{StaticResource ButtonStartPageStyle}" Content="Войти" Margin="100,190,100,121"/>
-        <Button x:Name="RegistrationBTN" Style="{StaticResource NoAccountButton}" Content="Зарегистрируйтесь" Margin="116,296,116,52"/>
+        <Button x:Name="RegistrationBTN" Style="{StaticResource NoAccountButton}" Content="Зарегистрируйтесь" Margin="116,296,116,52" Click="RegistrationBTN_Click"/>
         <Label Content="Нет аккаунта?" FontFamily="Cascadia Code" FontSize="16" Margin="100,276,100,70" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>
