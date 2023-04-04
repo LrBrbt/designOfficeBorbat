@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:Borbat"
         mc:Ignorable="d"
         Title="Проектное бюро Borbat" Height="450" Width="800">
-    <Grid Style="{StaticResource GridStyle}"
+    <Grid Style="{StaticResource GridStyle}">
         <TextBlock
             Name="BorbatText" 
-            Width="161" Height="100" FontSize="48" FontWeight="Bold" Foreground="Maroon" VerticalAlignment="Center" HorizontalAlignment="Center" Loaded="BorbatText_Loaded">
+            Width="161" Height="100" FontSize="48" FontWeight="Bold" Foreground="Maroon" VerticalAlignment="Center" HorizontalAlignment="Center">
             Borbat
 
             <TextBlock.Triggers>
@@ -17,14 +17,15 @@
                     <BeginStoryboard>
                         <Storyboard>
                             <DoubleAnimation
-                                Storyboard.TargetName="BorbatText" 
-                                Storyboard.TargetProperty="(TextBlock.Opacity)"
-                                From="0.0" To="1.0" Duration="0:0:3"/>
+                                    Storyboard.TargetName="BorbatText" 
+                                    Storyboard.TargetProperty="(TextBlock.Opacity)"
+                                    From="0.0" To="1.0" Duration="0:0:3"/>
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>
             </TextBlock.Triggers>
         </TextBlock>
+
 
         <TextBlock
             Name="DescribeText" 

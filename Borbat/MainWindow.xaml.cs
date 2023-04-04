@@ -26,10 +26,7 @@ namespace Borbat
             
         }
 
-        private void BorbatText_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
+        
 
         private void StartBTN_Click(object sender, RoutedEventArgs e)
         {
